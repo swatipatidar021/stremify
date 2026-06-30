@@ -12,7 +12,11 @@ import { connectDB } from "./lib/db.js";
 
 const app = express();
 const PORT = process.env.PORT;
-
+console.log("PORT", PORT);
+console.log("MONGO_URI", process.env.MONGO_URI);
+console.log("JWT_SECRET", process.env.JWT_SECRET);
+console.log("STREAM_API_KEY", process.env.STREAM_API_KEY);
+console.log("STREAM_API_SECRET", process.env.STREAM_API_SECRET);
 const __dirname = path.resolve();
 
 app.use(
